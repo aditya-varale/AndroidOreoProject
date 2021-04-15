@@ -1,1 +1,51 @@
-1 - Start Project with all details
+1 - TextView
+    1.1 - textAppearance
+    1.2 - textColor
+    1.3 - typeface
+    1.4 - lineSpacingExtra
+    1.5 - textAllCaps
+    1.6 - fontFamily
+2 - Button
+    2.1 - onClick
+
+3 - Log
+    3.1 - log.i for information
+    3.2 - log.e for error
+
+4 - TextField/EditText
+    4.1 - Plain Text
+    4.2 - Email
+    4.3 - Password
+    4.4 - Number
+
+5 - Displaying Message
+    5.1 - Toast
+
+6 - ImageView
+    6.1 - app:srcCompat="@drawable/tom"
+    6.2 - android:scaleType="fitCenter"
+    6.3 - image.setImageResource(drawable);
+7 - Currency Converter
+    7.1 - Double.parseDouble
+    7.2 - String.format("%.2f", amountInDollarsDouble);
+
+8 - Layout
+    8.1 - layout_marginBottom,layout_marginEnd,layout_marginStart,layout_marginTop
+    8.2 - layout_constraintBottom_toBottomOf,layout_constraintEnd_toEndOf,layout_constraintStart_toStartOf,layout_constraintTop_toTopOf
+
+9 - Animation
+    9.1 - bartImageView.animate().alpha(0).setDuration(2000);
+    9.2 - homerImageView.animate().alpha(1).setDuration(2000);
+    9.3 - bartImageView.animate().scaleX(0.5f).scaleY(0.5f).setDuration(1000);
+    9.4 - bartImageView.animate().translationXBy(1000).rotation(3600).setDuration(2000);
+10 - Grid Layout
+    10.1 - android:columnCount="3"
+    10.2 - android:rowCount="3"
+
+11 - Game Connect
+    11.1 - android:tag="0"
+    11.2 - int tappedCounter = Integer.parseInt(view.getTag().toString());
+    Reset/Play Again
+    11.3 - ImageView iv = (ImageView) gridLayout.getChildAt(i);
+    11.4 - iv.setImageDrawable(null);
+    11.5 - gameState[i] = 2;
