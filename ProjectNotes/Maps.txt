@@ -1,0 +1,4 @@
+1 - Maps
+    1.1 - Go TO console.developers.google.com and create project and get API for maps
+    1.2 - Copy-paste Api_Key in google_maps_api.xml with same SHA key
+    1.3 - API_KEY can set to unrestricted mode also

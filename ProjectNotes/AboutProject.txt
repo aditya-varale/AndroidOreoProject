@@ -49,3 +49,28 @@
     11.3 - ImageView iv = (ImageView) gridLayout.getChildAt(i);
     11.4 - iv.setImageDrawable(null);
     11.5 - gameState[i] = 2;
+12 - Video
+    12.1 - VideoView
+    12.2 - Add raw folder
+    12.3 - videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.demovideo);
+    12.4 - MediaController - use for controlling video play, pause
+    12.5 - mediaController.setAnchorView(videoView);
+    12.6 - videoView.setMediaController(mediaController);
+    12.7 - videoView.start();
+13 - Audio
+    13.1 - MediaPlayer mediaPlayer;    mediaPlayer.start();    mediaPlayer.pause();
+    13.2 - AudioManager audioManager;
+    13.3 - mediaPlayer = MediaPlayer.create(this, R.raw.marbles);
+    13.4 - scrubSeekBar.setMax(mediaPlayer.getDuration());
+    13.5 - mediaPlayer.seekTo(i);
+    13.6 - scrubSeekBar.setProgress(mediaPlayer.getCurrentPosition());
+    13.7 - scrubSeekBar.setOnSeekBarChangeListener => onProgressChanged, onStartTrackingTouch, onStopTrackingTouch
+    13.8 - volumeControl.setOnSeekBarChangeListener
+14 - ListView
+    14.1 - ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,timesTableContent);
+    14.2 - ListView.setAdapter(arrayAdapter);
+15 - CountDownTimer
+    15.1 - countDownTimer.cancel();
+    15.2 - countDownTimer = new CountDownTimer(timerSeekBar.getProgress() * 1000 + 100, 1000)
+    15.3 - onTick, onFinish
+    15.4 - timerSeekBar.setEnabled(true);
