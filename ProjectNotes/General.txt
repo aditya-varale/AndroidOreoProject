@@ -1,0 +1,11 @@
+1 - Notes Application
+    1.1 - setOnItemLongClickListener for long click listner
+    1.2 - HashSet<String> set
+    1.3 - ArrayList notes = new ArrayList(set); => create array list using set
+    1.4 - HashSet<String> set = new HashSet<>(notes); => create Hash Set using array list
+    1.5 - editText.addTextChangedListener(new TextWatcher() => beforeTextChanged, onTextChanged, afterTextChanged
+    1.6 - String.valueOf(charSequence) from Text change listener
+2 - Instagram
+    2.1 - Login to AWS and use Bitnani Parse server for data storage
+    2.2 - OnKeyListener
+    2.3 - onKey

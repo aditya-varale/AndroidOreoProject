@@ -2,3 +2,20 @@
     1.1 - Go TO console.developers.google.com and create project and get API for maps
     1.2 - Copy-paste Api_Key in google_maps_api.xml with same SHA key
     1.3 - API_KEY can set to unrestricted mode also
+    1.4 - Check Permission Granted
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+    1.5 - Request For Permission
+        ActivityCompat.requestPermissions(this,new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+    1.6 - To get user's location use LocationManager and LocationListner
+    1.7 - locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+    1.8 - locationListener = new LocationListener() => onLocationChanged
+    1.9 - locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,locationListener);
+    1.10 - OnMapReadyCallback this interface prepares maps SupportMapFragment
+    1.11 - OnMapLongClickListener this interface use to get long press interface => mMap.setOnMapLongClickListener(this);
+    1.12 - onMapLongClick
+    1.13 - Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
+    1.14 - List<Address> listAdddresses = geocoder.getFromLocation(latLng.latitude,latLng.longitude,1);
+    1.15 - mMap.addMarker(new MarkerOptions().position(latLng).title(address));
+    1.16 - mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 12));
+
+
